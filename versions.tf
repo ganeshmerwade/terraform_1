@@ -8,9 +8,9 @@ terraform {
     }
 
     backend "s3" {
-      bucket = "ratan-s3-terraform-backend-5378637678"
+      bucket = "s3terraformbackend-ganesh"
       key = "main/terraform.tfstate"
       region = "us-east-1"
-      dynamodb_table = "ratan-ddb-terraform-backend-5378637678"
+      dynamodb_table = "ddb-terraform-backend-ganesh"
     }
 }

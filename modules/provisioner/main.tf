@@ -7,11 +7,6 @@ resource "null_resource" "install_jenkins_remote_exec" {
       agent = false
     }
 
-    # provisioner "file" {
-    #     source      = var.src
-    #     destination = var.dest
-    # }
-
     provisioner "remote-exec" {
       script = var.src
     }

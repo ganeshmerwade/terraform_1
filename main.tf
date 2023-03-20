@@ -16,6 +16,7 @@ module "create_ddb_backend" {
 module "create_key_pair" {
   source = "./modules/create_key_pair"
   key_pair_key_name = var.root_key_pair_key_name
+  key_path = var.root_key_path
 }
 
 module "create_security_group" {
